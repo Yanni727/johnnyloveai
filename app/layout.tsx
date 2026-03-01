@@ -4,8 +4,9 @@ export const metadata = {
   title: "Johnny Love AI — Reactivate. Rebook. Scale.",
   description: "Automation systems that recover revenue you already paid for.",
   icons: {
-    icon: "/favicon.png",
-  },
+  icon: "/favicon.png",
+  apple: "/apple-touch-icon.png",
+},
 };
 
 export default function RootLayout({
