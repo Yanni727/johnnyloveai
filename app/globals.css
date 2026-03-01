@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg0: #070b12;
+  --bg1: #0a2137;
+  --ink: #e3e7f0;
+
+  --blue: #32a0e5;
+  --blue2: #1951a1;
+  --green: #21ff6a;
+  --green2: #039d19;
+}
+
+html, body { height: 100%; }
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 800px at 20% 0%, rgba(50,160,229,0.18), transparent 60%),
+    radial-gradient(900px 700px at 80% 10%, rgba(33,255,106,0.12), transparent 55%),
+    radial-gradient(1000px 900px at 50% 110%, rgba(25,81,161,0.18), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+.neon-blue {
+  text-shadow: 0 0 12px rgba(50,160,229,0.55), 0 0 28px rgba(50,160,229,0.35);
+}
+
+.neon-green {
+  text-shadow: 0 0 12px rgba(33,255,106,0.55), 0 0 28px rgba(33,255,106,0.35);
+}
+
+.glow-border {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.10),
+    0 0 26px rgba(50,160,229,0.15),
+    0 0 26px rgba(33,255,106,0.10);
+}
+
+.grid-hud {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+  background-size: 18px 18px;
+}
