@@ -1,34 +1,29 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://www.johnnyloveai.com"),
   title: "Johnny Love AI — Reactivate. Rebook. Scale.",
-  description:
-    "Automation systems that recover revenue you already paid for.",
+  description: "Automation systems that recover revenue you already paid for.",
   icons: {
     icon: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
+  alternates: {
+    canonical: "https://www.johnnyloveai.com/",
+  },
   openGraph: {
     title: "Johnny Love AI — Reactivate. Rebook. Scale.",
-    description:
-      "Automation systems that recover revenue you already paid for.",
-    url: "https://johnnyloveai.com",
+    description: "Automation systems that recover revenue you already paid for.",
+    url: "https://www.johnnyloveai.com/",
     siteName: "Johnny Love AI",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: ["https://www.johnnyloveai.com/og-image.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Johnny Love AI — Reactivate. Rebook. Scale.",
-    description:
-      "Automation systems that recover revenue you already paid for.",
-    images: ["/og-image.png"],
+    description: "Automation systems that recover revenue you already paid for.",
+    images: ["https://www.johnnyloveai.com/og-image.png"],
   },
 };
 
