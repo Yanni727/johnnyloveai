@@ -2,6 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://www.johnnyloveai.com"),
+  
   title: "Johnny Love AI — Reactivate. Rebook. Scale.",
   description: "Automation systems that recover revenue you already paid for.",
   icons: {
@@ -12,13 +13,14 @@ export const metadata = {
     canonical: "https://www.johnnyloveai.com/",
   },
   openGraph: {
-    title: "Johnny Love AI — Reactivate. Rebook. Scale.",
-    description: "Automation systems that recover revenue you already paid for.",
-    url: "https://www.johnnyloveai.com/",
-    siteName: "Johnny Love AI",
-    images: ["https://www.johnnyloveai.com/og-image.png"],
-    type: "website",
-  },
+  title: "Johnny Love AI — Reactivate. Rebook. Scale.",
+  description: "Automation systems that recover revenue you already paid for.",
+  url: "https://www.johnnyloveai.com/",
+  siteName: "Johnny Love AI",
+  images: ["https://www.johnnyloveai.com/og-image.png"],
+  type: "website",
+  appId: "912812437820478",
+},
   twitter: {
     card: "summary_large_image",
     title: "Johnny Love AI — Reactivate. Rebook. Scale.",
