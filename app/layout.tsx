@@ -1,4 +1,5 @@
 import "./globals.css";
+import MetaPixel from "@/components/MetaPixel";
 
 export const metadata = {
   metadataBase: new URL("https://www.johnnyloveai.com"),
