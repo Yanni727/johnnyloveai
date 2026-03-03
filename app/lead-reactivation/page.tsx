@@ -1,8 +1,26 @@
+"use client";
 import Image from "next/image";
 import { Nav } from "@/components/Nav";
 import { siteConfig } from "@/lib/config";
+import { useEffect } from "react";
 
-export default function LeadReactivationPage() {
+export default function LeadReactivationPage() {  
+  useEffect(() => {
+    function handleTallySubmit(event: any) {
+      if (event?.detail?.formId) {
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("track", "Lead");
+          console.log("Lead event fired");
+        }
+      }
+    }
+
+    window.addEventListener("tally:submit", handleTallySubmit);
+
+    return () => {
+      window.removeEventListener("tally:submit", handleTallySubmit);
+    };
+  }, []);
   return (
     <div>
       <Nav />
